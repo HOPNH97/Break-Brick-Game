@@ -8,11 +8,13 @@ public class Ball : MonoBehaviour
     bool isPlaying = false;
     Vector3 firstPos;
 
+    int count;
+
     GameController gameController;
     void Start()
     {
         firstPos = transform.localPosition;
-        Debug.LogFormat(firstPos.ToString());
+        //Debug.LogFormat(firstPos.ToString());
         gameController = GameObject.FindObjectOfType<GameController>();
     }
 
@@ -28,6 +30,12 @@ public class Ball : MonoBehaviour
             transform.parent = null;
             gameObject.GetComponent<Rigidbody>().AddForce(force, 0, force);
             isPlaying = true;
+        }
+        count = GameObject.FindGameObjectsWithTag("Brick").Length;
+        Debug.Log(count);
+        if (count == 0)
+        {
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
     void ResetBall()

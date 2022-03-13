@@ -32,21 +32,31 @@ extern void Brick__ctor_mC3A70F4DA188A9239DA0367C9BAACB5176AB9213 (void);
 extern void GameController_IncreasePoint_mE814AE795ABE86D11C66BB2A6C841F06EA6D57F1 (void);
 // 0x0000000A System.Void GameController::SetPoint()
 extern void GameController_SetPoint_m6F4F2CADE1E2C272A117E3B255F7C2AD6AD0C78E (void);
-// 0x0000000B System.Void GameController::.ctor()
+// 0x0000000B System.Void GameController::Pause()
+extern void GameController_Pause_mF6FCFD1C244F2FD91A652F9D9A6ED07C9AD0DC2B (void);
+// 0x0000000C System.Void GameController::Resume()
+extern void GameController_Resume_mAAF1F21C518C603426131509E2282BB4629BB817 (void);
+// 0x0000000D System.Void GameController::Quit()
+extern void GameController_Quit_m09C9A21AEB188C3D1E962FDBF4E208C0B0103E22 (void);
+// 0x0000000E System.Void GameController::.ctor()
 extern void GameController__ctor_m9D952052C0A7234373FA5531292FCA8855BE2643 (void);
-// 0x0000000C System.Void Pad::Start()
+// 0x0000000F System.Void GameManager::EndGame()
+extern void GameManager_EndGame_m34CB0E063C72D2D7BA815B5397C5DB865EE60810 (void);
+// 0x00000010 System.Void GameManager::.ctor()
+extern void GameManager__ctor_mE8666F6D0CA9C31E16B719F79780DC4B0245B64D (void);
+// 0x00000011 System.Void Pad::Start()
 extern void Pad_Start_m1FA87181B227E73DA409E84BDEFBC6F595AB37E8 (void);
-// 0x0000000D System.Void Pad::Update()
+// 0x00000012 System.Void Pad::Update()
 extern void Pad_Update_m75DCB27EFB9ADB9A57E56D54B8C4A1E7E5E7F844 (void);
-// 0x0000000E System.Void Pad::.ctor()
+// 0x00000013 System.Void Pad::.ctor()
 extern void Pad__ctor_mDD7303F6CC1860E59D821C1FB765F79FDD19569C (void);
-// 0x0000000F System.Void Sound::Start()
+// 0x00000014 System.Void Sound::Start()
 extern void Sound_Start_m085324B71DE4DD0B740C6F0A9EF90E0AB3FC4FA0 (void);
-// 0x00000010 System.Void Sound::OnCollisionEnter()
+// 0x00000015 System.Void Sound::OnCollisionEnter()
 extern void Sound_OnCollisionEnter_m96A7D85F26195659B6AD5AD10EC074EFFDA467F3 (void);
-// 0x00000011 System.Void Sound::.ctor()
+// 0x00000016 System.Void Sound::.ctor()
 extern void Sound__ctor_mEA0B0D2FBD514F91C21900B0BB8679CD78843FCD (void);
-static Il2CppMethodPointer s_methodPointers[17] = 
+static Il2CppMethodPointer s_methodPointers[22] = 
 {
 	Ball_Start_m218869060D38F7477CC98EBB540C6015DB639629,
 	Ball_Update_mCD5B496FCBE14D32420090CAA070263F5235D3F2,
@@ -58,7 +68,12 @@ static Il2CppMethodPointer s_methodPointers[17] =
 	Brick__ctor_mC3A70F4DA188A9239DA0367C9BAACB5176AB9213,
 	GameController_IncreasePoint_mE814AE795ABE86D11C66BB2A6C841F06EA6D57F1,
 	GameController_SetPoint_m6F4F2CADE1E2C272A117E3B255F7C2AD6AD0C78E,
+	GameController_Pause_mF6FCFD1C244F2FD91A652F9D9A6ED07C9AD0DC2B,
+	GameController_Resume_mAAF1F21C518C603426131509E2282BB4629BB817,
+	GameController_Quit_m09C9A21AEB188C3D1E962FDBF4E208C0B0103E22,
 	GameController__ctor_m9D952052C0A7234373FA5531292FCA8855BE2643,
+	GameManager_EndGame_m34CB0E063C72D2D7BA815B5397C5DB865EE60810,
+	GameManager__ctor_mE8666F6D0CA9C31E16B719F79780DC4B0245B64D,
 	Pad_Start_m1FA87181B227E73DA409E84BDEFBC6F595AB37E8,
 	Pad_Update_m75DCB27EFB9ADB9A57E56D54B8C4A1E7E5E7F844,
 	Pad__ctor_mDD7303F6CC1860E59D821C1FB765F79FDD19569C,
@@ -66,32 +81,37 @@ static Il2CppMethodPointer s_methodPointers[17] =
 	Sound_OnCollisionEnter_m96A7D85F26195659B6AD5AD10EC074EFFDA467F3,
 	Sound__ctor_mEA0B0D2FBD514F91C21900B0BB8679CD78843FCD,
 };
-static const int32_t s_InvokerIndices[17] = 
+static const int32_t s_InvokerIndices[22] = 
 {
-	1122,
-	1122,
-	1122,
-	1122,
-	961,
-	1122,
-	1122,
-	1122,
-	1122,
-	1122,
-	1122,
-	1122,
-	1122,
-	1122,
-	1122,
-	1122,
-	1122,
+	1123,
+	1123,
+	1123,
+	1123,
+	962,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
+	1123,
 };
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	17,
+	22,
 	s_methodPointers,
 	0,
 	NULL,
